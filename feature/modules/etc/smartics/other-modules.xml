@@ -311,6 +311,19 @@
         <include artifact="com.google.auth:google-auth-library-oauth2-http" />
     </module>
 
+    <module name="com.google.guava" slot="19.0">
+        <properties>
+            <property name="jboss.api" value="private"/>
+        </properties>
+        <include artifact=":guava" />
+        <apply-to-dependencies skip="true">
+            <include module="com.google.code.findbugs" />
+        </apply-to-dependencies>
+        <dependencies>
+            <module name="javax.inject.api" />
+        </dependencies>
+    </module>
+
     <module name="com.google.http-client.google-http-client">
         <include artifact="com.google.http-client:google-http-client" />
         <include artifact="com.google.http-client:google-http-client-jackson2" />
@@ -656,7 +669,7 @@
             <include module="io.netty.skipped"/>
         </apply-to-dependencies>
         <dependencies>
-            <module name="io.netty" slot="4.1"/>
+            <module name="io.netty"/>
             <module name="javax.api"/>
         </dependencies>
     </module>
@@ -992,20 +1005,6 @@
         <include artifact="org.apache.htrace:htrace-core" />
     </module>
 
-    <!-- [FIXME #1357] Integrate with httpclient 4.5.2 when provided by WildFly -->
-    <module name="org.apache.httpcomponents" slot="4.5" inherit-slot="false">
-        <properties>
-            <property name="jboss.api" value="private"/>
-        </properties>
-        <include artifact="org.apache.httpcomponents:httpclient" />
-        <include artifact="org.apache.httpcomponents:httpcore" />
-        <include artifact="org.apache.httpcomponents:httpmime" />
-        <dependencies>
-            <module name="javax.api" />
-            <module name="org.apache.james.mime4j"/>
-        </dependencies>
-    </module>
-
     <module name="org.apache.kafka">
         <properties>
             <property name="jboss.api" value="private"/>
@@ -1245,7 +1244,7 @@
         </apply-to-dependencies>
         <dependencies>
             <module name="javax.api" />
-            <module name="io.netty" slot="4.1"/>
+            <module name="io.netty" />
         </dependencies>
         <exports>
             <exclude path="io/netty**" />

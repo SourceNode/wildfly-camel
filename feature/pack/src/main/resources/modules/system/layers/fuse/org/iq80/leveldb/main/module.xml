@@ -8,6 +8,6 @@
     <artifact name="${org.iq80.leveldb:leveldb-api}" />
   </resources>
   <dependencies>
-    <module name="com.google.guava" />
+    <module name="com.google.guava" slot="19.0" />
   </dependencies>
 </module>

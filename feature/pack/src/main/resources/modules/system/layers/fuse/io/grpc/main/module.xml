@@ -16,12 +16,12 @@
     <artifact name="${io.opencensus:opencensus-api}" />
   </resources>
   <dependencies>
-    <module name="io.netty" slot="4.1" />
+    <module name="io.netty" />
     <module name="javax.api" />
     <module name="com.fasterxml.jackson.core.jackson-databind" />
     <module name="com.google.api.grpc.proto-google-common-protos" />
     <module name="com.google.auth.google-auth-library-credentials" />
-    <module name="com.google.guava" />
+    <module name="com.google.guava" slot="19.0" />
     <module name="com.google.protobuf" />
     <module name="org.apache.commons.codec" />
     <module name="org.bouncycastle" />
