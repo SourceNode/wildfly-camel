@@ -46,13 +46,14 @@
     <properties>
 
         <!-- Camel versions -->
-        <version.apache.camel>2.20.0</version.apache.camel>
+        <version.apache.camel>2.21.0-SNAPSHOT</version.apache.camel>
         <version.camel.lucene5>5.5.2</version.camel.lucene5>
         <version.camel.hadoop2>2.7.4</version.camel.hadoop2>
         <version.camel.hadoop2.protobuf>2.5.0</version.camel.hadoop2.protobuf>
         <version.camel.hbase>1.2.6</version.camel.hbase>
+        <version.camel.netty40>4.0.52.Final</version.camel.netty40>
         <version.camel.netty41>4.1.16.Final</version.camel.netty41>
-        <version.camel.qpid.proton>0.16.0</version.camel.qpid.proton>
+        <version.camel.qpid.proton>0.22.0</version.camel.qpid.proton>
 
         <!-- WildFly versions -->
         <version.wildfly>10.1.0.Final</version.wildfly>
