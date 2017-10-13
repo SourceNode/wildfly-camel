@@ -17,6 +17,7 @@ zipkin
 [undecided]
 headersmap
 reactor
+spring-dm
 
 [rejected]
 bam                             #deprecated

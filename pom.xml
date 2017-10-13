@@ -46,7 +46,7 @@
     <properties>
 
         <!-- Camel versions -->
-        <version.apache.camel>2.20.0</version.apache.camel>
+        <version.apache.camel>2.20.1-SNAPSHOT</version.apache.camel>
         <version.camel.lucene5>5.5.2</version.camel.lucene5>
         <version.camel.hadoop2>2.7.4</version.camel.hadoop2>
         <version.camel.hadoop2.protobuf>2.5.0</version.camel.hadoop2.protobuf>
